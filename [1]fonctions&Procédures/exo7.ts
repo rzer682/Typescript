@@ -6,7 +6,7 @@ function operationOnNumber(n: number, x: number): number[] {
         (n: number, x: number) => n / x
     ];
 
-    const results: number[] = [];
+    let results: number[] = [];
     for (let i = 0; i < operationFunctions.length; i++) {
         results.push(operationFunctions[i](n, x));
     }
